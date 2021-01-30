@@ -28,16 +28,16 @@ RUN \
         build-base \
     \
     && apk add --no-cache \
-        libcrypto1.1=1.1.1i-r0 \
-        libssl1.1=1.1.1i-r0 \
-        musl-utils=1.2.2-r0 \
-        musl=1.2.2-r0 \
+        libcrypto1.1 \
+        libssl1.1 \
+        musl-utils \
+        musl \
     \
     && apk add --no-cache \
-        bash=5.1.0-r0 \
-        curl=7.74.0-r0 \
-        jq=1.6-r1 \
-        tzdata=2020f-r0 \
+        bash \
+        curl \
+        jq \
+        tzdata \
     \
     && S6_ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "i386" ]; then S6_ARCH="x86"; fi \
