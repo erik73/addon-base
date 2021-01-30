@@ -69,6 +69,7 @@ RUN \
     && ./configure \
     && make \
     && make install \
+    \
     && apk del --no-cache --purge .build-dependencies \
     && rm -f -r \
         /tmp/* \
