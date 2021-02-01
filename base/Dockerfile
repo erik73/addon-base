@@ -43,14 +43,14 @@ RUN \
     && if [ "${BUILD_ARCH}" = "i386" ]; then S6_ARCH="x86"; fi \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then S6_ARCH="arm"; fi \
     \
-    && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/v2.2.0.1/s6-overlay-${S6_ARCH}.tar.gz" \
+    && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.2/s6-overlay-${S6_ARCH}.tar.gz" \
         | tar zxvf - -C / \
     \
     && mkdir -p /etc/fix-attrs.d \
     && mkdir -p /etc/services.d \
     \
     && curl -J -L -o /tmp/bashio.tar.gz \
-        "https://github.com/hassio-addons/bashio/archive/v0.11.0.tar.gz" \
+        "https://github.com/hassio-addons/bashio/archive/v0.12.0.tar.gz" \
     && mkdir /tmp/bashio \
     && tar zxvf \
         /tmp/bashio.tar.gz \
