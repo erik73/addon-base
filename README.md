@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Base Images
+# Home Assistant: Base Image
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -16,7 +16,7 @@
 
 [github-sponsors]
 
-Docker base images used by Home Assistant Add-ons.
+Docker base image used by Home Assistant Add-ons.
 
 ## About
 
@@ -25,6 +25,7 @@ Features:
 - Adds [s6] as a process supervisor.
 - Adds `jq` & `curl`, since every add-on uses them.
 - Adds Docker [Label Schema][label-schema] support.
+- Adds Jemalloc memory allocator.
 - Includes a helper library: [Bashio][bashio]
 - Includes template helper: [tempio][tempio]
 - Handles logs, add-on startup banners and update notifications.
@@ -85,31 +86,20 @@ SOFTWARE.
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [bashio]: https://github.com/hassio-addons/bashio
-[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-base.svg
-[commits]: https://github.com/hassio-addons/addon-base/commits/main
-[contributors]: https://github.com/hassio-addons/addon-base/graphs/contributors
-[discord-ha]: https://discord.gg/c5DvZ4e
-[discord-shield]: https://img.shields.io/discord/478094546522079232.svg
-[discord]: https://discord.me/hassioaddons
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/?u=frenck
-[frenck]: https://github.com/frenck
-[github-actions-shield]: https://github.com/hassio-addons/addon-base/workflows/CI/badge.svg
-[github-actions]: https://github.com/hassio-addons/addon-base/actions
-[github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
-[github-sponsors]: https://github.com/sponsors/frenck
+[commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/addon-base.svg
+[commits]: https://github.com/erik73/addon-base/commits/main
+[contributors]: https://github.com/erik73/addon-base/graphs/contributors
+[github-actions-shield]: https://github.com/erik73/addon-base/workflows/CI/badge.svg
+[github-actions]: https://github.com/erik73/addon-base/actions
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[issue]: https://github.com/hassio-addons/addon-base/issues
+[issue]: https://github.com/erik73/addon-base/issues
 [label-schema]: http://label-schema.org/
-[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-base.svg
+[license-shield]: https://img.shields.io/github/license/erik73/addon-base.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
-[patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
-[patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Production%20Ready-brightgreen.svg
-[reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-base.svg
-[releases]: https://github.com/hassio-addons/addon-base/releases
-[repository]: https://github.com/hassio-addons/repository
+[releases-shield]: https://img.shields.io/github/release/erik73/addon-base.svg
+[releases]: https://github.com/erik73/addon-base/releases
+[repository]: https://github.com/erik73/hassio-addons
 [s6]: http://skarnet.org/software/s6/overview.html
 [semver]: http://semver.org/spec/v2.0.0.html
 [tempio]: https://github.com/home-assistant/tempio
