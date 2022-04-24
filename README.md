@@ -95,7 +95,7 @@ SOFTWARE.
 [issue]: https://github.com/erik73/addon-base/issues
 [label-schema]: http://label-schema.org/
 [license-shield]: https://img.shields.io/github/license/erik73/addon-base.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Production%20Ready-brightgreen.svg
 [releases-shield]: https://img.shields.io/github/release/erik73/addon-base.svg
 [releases]: https://github.com/erik73/addon-base/releases
