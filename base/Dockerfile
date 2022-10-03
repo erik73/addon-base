@@ -18,7 +18,7 @@ COPY rootfs /
 # Set shell
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
-ARG JEMALLOC_VERSION=5.2.1
+ARG JEMALLOC_VERSION=5.3.0
 
 # Install base system
 ARG BUILD_ARCH=amd64
