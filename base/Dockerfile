@@ -1,4 +1,4 @@
-ARG BUILD_FROM=alpine:3.17.0
+ARG BUILD_FROM=alpine:3.17.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -42,7 +42,7 @@ RUN \
         jq \
         tzdata \
     \
-    && S6_VERSION="3.1.2.1" \
+    && S6_VERSION="3.1.3.0" \
     && S6_ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "i386" ]; then S6_ARCH="i686"; \
     elif [ "${BUILD_ARCH}" = "amd64" ]; then S6_ARCH="x86_64"; \
