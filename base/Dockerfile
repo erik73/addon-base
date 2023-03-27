@@ -29,21 +29,21 @@ RUN \
     set -o pipefail \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        build-base \
-        tar \
-        xz \
+        build-base=0.5-r3 \
+        tar=1.34-r2 \
+        xz=5.2.9-r0 \
     \
     && apk add --no-cache \
-        libcrypto1.1 \
-        libssl1.1 \
-        musl-utils \
-        musl \
+        libcrypto3=3.0.8-r1 \
+        libssl3=3.0.8-r1 \
+        musl-utils=1.2.3-r4 \
+        musl=1.2.3-r4 \
     \
     && apk add --no-cache \
-        bash \
-        curl \
-        jq \
-        tzdata \
+        bash=5.2.15-r0 \
+        curl=7.88.1-r1 \
+        jq=1.6-r2 \
+        tzdata=2023b-r1 \
     \
         && S6_ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "i386" ]; then S6_ARCH="i686"; \
