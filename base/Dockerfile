@@ -18,7 +18,7 @@ COPY rootfs /
 # Set shell
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
-ARG JEMALLOC_VERSION=5.3.0
+ARG JEMALLOC_VERSION="5.2.1"
 ARG BASHIO_VERSION="v0.14.3"
 ARG S6_OVERLAY_VERSION="v3.1.4.1"
 ARG TEMPIO_VERSION="2021.09.0"
@@ -34,8 +34,8 @@ RUN \
         xz=5.2.9-r0 \
     \
     && apk add --no-cache \
-        libcrypto3=3.0.8-r1 \
-        libssl3=3.0.8-r1 \
+        libcrypto3=3.0.8-r0 \
+        libssl3=3.0.8-r0 \
         musl-utils=1.2.3-r4 \
         musl=1.2.3-r4 \
     \
@@ -76,10 +76,13 @@ RUN \
         "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}" \
     && chmod a+x /usr/bin/tempio \
     \
-    && mkdir -p /usr/src \
-    && curl -L -f -s "https://github.com/jemalloc/jemalloc/releases/download/${JEMALLOC_VERSION}/jemalloc-${JEMALLOC_VERSION}.tar.bz2" \
-        | tar -xjf - -C /usr/src \
-    && cd /usr/src/jemalloc-${JEMALLOC_VERSION} \
+    && curl -J -L -o /tmp/jemalloc.tar.bz2 \
+        "https://github.com/jemalloc/jemalloc/releases/download/${JEMALLOC_VERSION}/jemalloc-${JEMALLOC_VERSION}.tar.bz2" \
+    && mkdir /tmp/jemalloc \
+    && tar jxvf \
+        /tmp/jemalloc.tar.bz2 \
+        --strip 1 -C /tmp/jemalloc \
+    && cd /tmp/jemalloc \
     && ./configure \
     && make \
     && make install \
