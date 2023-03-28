@@ -78,7 +78,7 @@ RUN \
     \
     && curl -J -L -o /tmp/jemalloc.tar.gz \
         "https://github.com/jemalloc/jemalloc/releases/download/${JEMALLOC_VERSION}/jemalloc-${JEMALLOC_VERSION}.tar.bz2" \
-  && mkdir /tmp/jemalloc \
+    && mkdir /tmp/jemalloc \
     && tar zxvf \
         /tmp/jemalloc.tar.gz \
         --strip 1 -C /tmp/jemalloc \
