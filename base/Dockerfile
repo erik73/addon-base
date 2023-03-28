@@ -82,8 +82,8 @@ RUN \
     && tar jxvf \
         /tmp/jemalloc.tar.bz2 \
         --strip 1 -C /tmp/jemalloc \
-    && ./configure \
     && cd /tmp/jemalloc \
+    && ./configure \
     && make \
     && make install \
     \
