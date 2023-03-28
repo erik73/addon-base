@@ -45,6 +45,15 @@
     },
     {
       "fileMatch": ["/Dockerfile$"],
+      "matchStrings": [
+        "ARG JEMALLOC_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "jemalloc/jemalloc",
+      "versioningTemplate": "loose"
+    },
+    {
+      "fileMatch": ["/Dockerfile$"],
       "matchStringsStrategy": "any",
       "matchStrings": [
         "\\s\\s(?<package>[a-z0-9-]+)=(?<currentValue>[a-z0-9-_.]+)\\s+"
