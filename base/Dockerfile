@@ -76,11 +76,14 @@ RUN \
         "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}" \
     && chmod a+x /usr/bin/tempio \
     \
-    && mkdir -p /usr/src \
-    && curl -L -f -s "https://github.com/jemalloc/jemalloc/releases/download/${JEMALLOC_VERSION}/jemalloc-${JEMALLOC_VERSION}.tar.bz2" \
-        | tar -xjf - -C /usr/src \
-    && cd /usr/src/jemalloc-${JEMALLOC_VERSION} \
+    && curl -J -L -o /tmp/jemalloc.tar.gz \
+        "https://github.com/jemalloc/jemalloc/releases/download/${JEMALLOC_VERSION}/jemalloc-${JEMALLOC_VERSION}.tar.bz2" \
+  && mkdir /tmp/jemalloc \
+    && tar zxvf \
+        /tmp/jemalloc.tar.gz \
+        --strip 1 -C /tmp/jemalloc \
     && ./configure \
+    && cd /tmp/jemalloc \
     && make \
     && make install \
     \
