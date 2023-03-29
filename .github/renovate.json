@@ -75,6 +75,12 @@
       "automerge": true
     },
     {
+      "groupName": "OpenSSL",
+      "matchDatasources": ["repology"],
+      "matchPackagePatterns": ["^alpine_.*/(libssl|libcrypto).*$"],
+      "automerge": true
+    },
+    {
       "groupName": "Alpine base image",
       "matchDatasources": ["docker"]
     },
