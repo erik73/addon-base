@@ -18,7 +18,7 @@ COPY rootfs /
 # Set shell
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
-ARG JEMALLOC_VERSION="5.2.1"
+ARG JEMALLOC_VERSION="5.3.0"
 ARG BASHIO_VERSION="v0.14.3"
 ARG S6_OVERLAY_VERSION="v3.1.4.1"
 ARG TEMPIO_VERSION="2021.09.0"
