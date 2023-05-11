@@ -30,7 +30,7 @@ RUN \
     \
     && apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r3 \
-        tar=1.34-r2 \
+        tar=1.34-r3 \
         xz=5.4.3-r0 \
     \
     && apk add --no-cache \
