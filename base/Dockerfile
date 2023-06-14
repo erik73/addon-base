@@ -18,7 +18,6 @@ COPY rootfs /
 # Set shell
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
-ARG JEMALLOC_VERSION="5.3.0"
 ARG BASHIO_VERSION="v0.15.0"
 ARG S6_OVERLAY_VERSION="v3.1.5.0"
 ARG TEMPIO_VERSION="2021.09.0"
@@ -75,17 +74,6 @@ RUN \
     && curl -L -s -o /usr/bin/tempio \
         "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}" \
     && chmod a+x /usr/bin/tempio \
-    \
-    && curl -J -L -o /tmp/jemalloc.tar.bz2 \
-        "https://github.com/jemalloc/jemalloc/releases/download/${JEMALLOC_VERSION}/jemalloc-${JEMALLOC_VERSION}.tar.bz2" \
-    && mkdir /tmp/jemalloc \
-    && tar jxvf \
-        /tmp/jemalloc.tar.bz2 \
-        --strip 1 -C /tmp/jemalloc \
-    && cd /tmp/jemalloc \
-    && ./configure \
-    && make \
-    && make install \
     \
     && apk del --no-cache --purge .build-dependencies \
     && rm -f -r \
