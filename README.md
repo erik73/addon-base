@@ -61,7 +61,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2017-2023 Erik Hilton
+Copyright (c) 2017-2024 Erik Hilton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -95,7 +95,7 @@ SOFTWARE.
 [issue]: https://github.com/erik73/addon-base/issues
 [label-schema]: http://label-schema.org/
 [license-shield]: https://img.shields.io/github/license/erik73/addon-base.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
 [project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Production%20Ready-brightgreen.svg
 [releases-shield]: https://img.shields.io/github/release/erik73/addon-base.svg
 [releases]: https://github.com/erik73/addon-base/releases
