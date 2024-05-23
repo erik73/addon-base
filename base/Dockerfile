@@ -30,7 +30,7 @@ RUN \
     && apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r3 \
         tar=1.35-r2 \
-        xz=5.4.5-r0 \
+        xz=5.6.1-r3 \
     \
     && apk add --no-cache \
         libcrypto3=3.3.0-r2 \
