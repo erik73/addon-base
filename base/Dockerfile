@@ -19,7 +19,7 @@ COPY rootfs /
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 ARG BASHIO_VERSION="v0.16.2"
-ARG S6_OVERLAY_VERSION="v3.1.6.2"
+ARG S6_OVERLAY_VERSION="v3.2.0.0"
 ARG TEMPIO_VERSION="2021.09.0"
 
 # Install base system
