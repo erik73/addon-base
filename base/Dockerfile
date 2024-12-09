@@ -42,7 +42,7 @@ RUN \
         bash=5.2.37-r0 \
         curl=8.11.0-r2 \
         jq=1.7.1-r0 \
-        tzdata=2024b-r0 \
+        tzdata=2024b-r1 \
     \
         && S6_ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "i386" ]; then S6_ARCH="i686"; \
