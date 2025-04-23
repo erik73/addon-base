@@ -18,7 +18,7 @@ COPY rootfs /
 # Set shell
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
-ARG BASHIO_VERSION="v0.16.3"
+ARG BASHIO_VERSION="v0.16.4"
 ARG S6_OVERLAY_VERSION="v3.2.0.2"
 ARG TEMPIO_VERSION="2024.11.2"
 
