@@ -6,9 +6,6 @@
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
-![Supports armhf Architecture][armhf-shield]
-![Supports armv7 Architecture][armv7-shield]
-![Supports i386 Architecture][i386-shield]
 
 [![GitHub Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
@@ -61,7 +58,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2017-2024 Erik Hilton
+Copyright (c) 2017-2025 Erik Hilton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -83,19 +80,16 @@ SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [bashio]: https://github.com/hassio-addons/bashio
 [commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/addon-base.svg
 [commits]: https://github.com/erik73/addon-base/commits/main
 [contributors]: https://github.com/erik73/addon-base/graphs/contributors
 [github-actions-shield]: https://github.com/erik73/addon-base/workflows/CI/badge.svg
 [github-actions]: https://github.com/erik73/addon-base/actions
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/erik73/addon-base/issues
 [label-schema]: http://label-schema.org/
 [license-shield]: https://img.shields.io/github/license/erik73/addon-base.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
 [project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Production%20Ready-brightgreen.svg
 [releases-shield]: https://img.shields.io/github/release/erik73/addon-base.svg
 [releases]: https://github.com/erik73/addon-base/releases
