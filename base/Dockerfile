@@ -92,7 +92,7 @@ ARG BUILD_REPOSITORY
 # Labels
 LABEL \
     io.hass.name="Addon base for ${BUILD_ARCH}" \
-    io.hass.description="Home Assistant Add-on: ${BUILD_ARCH} base image" \
+    io.hass.description="Home Assistant App: ${BUILD_ARCH} base image" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="base" \
     io.hass.version=${BUILD_VERSION} \
@@ -100,9 +100,9 @@ LABEL \
     io.hass.base.name="alpine" \
     io.hass.base.image="erik73/base" \
     maintainer="Erik Hilton <erikhilton73@gmail.com>" \
-    org.opencontainers.image.title="Addon base for ${BUILD_ARCH}" \
-    org.opencontainers.image.description="Home Assistant Add-on: ${BUILD_ARCH} Base image" \
-    org.opencontainers.image.vendor="Erik73 Add-ons" \
+    org.opencontainers.image.title="App base for ${BUILD_ARCH}" \
+    org.opencontainers.image.description="Home Assistant App: ${BUILD_ARCH} Base image" \
+    org.opencontainers.image.vendor="Erik73 Apps" \
     org.opencontainers.image.authors="Erik Hilton <erikhilton73@gmail.com>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://github.com/hassio-addons" \
