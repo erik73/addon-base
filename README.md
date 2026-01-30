@@ -13,19 +13,19 @@
 
 [github-sponsors]
 
-Docker base image used by Home Assistant Add-ons.
+Docker base image used by Home Assistant Apps.
 
 ## About
 
 Features:
 
 - Adds [s6] as a process supervisor.
-- Adds `jq` & `curl`, since every add-on uses them.
+- Adds `jq` & `curl`, since every app uses them.
 - Adds Docker [Label Schema][label-schema] support.
 - Adds Jemalloc memory allocator.
 - Includes a helper library: [Bashio][bashio]
 - Includes template helper: [tempio][tempio]
-- Handles logs, add-on startup banners and update notifications.
+- Handles logs, app startup banners and update notifications.
 - Several small adjustments and improvements.
 
 ## Changelog & Releases
@@ -47,18 +47,18 @@ Got questions?
 
 You could also [open an issue here][issue] GitHub.
 
-## We have got some Home Assistant add-ons for you
+## We have got some Home Assistant apps for you
 
 Want some more functionality to your Home Assistant instance?
 
-We have created multiple add-ons for Home Assistant. For a full list, check out
+We have created multiple appss for Home Assistant. For a full list, check out
 our [GitHub Repository][repository].
 
 ## License
 
 MIT License
 
-Copyright (c) 2017-2025 Erik Hilton
+Copyright (c) 2017-2026 Erik Hilton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
