@@ -2,7 +2,6 @@
 # ==============================================================================
 # Home Assistant Community App: Base Images
 # This script patches all service commands into the appropriate s6- commands
-# Why not systemd? Docker said no, so did we ;)
 # ==============================================================================
 
 start() {
